@@ -3,10 +3,16 @@ import Section from "../components/ui/Section.jsx";
 import Button from "../components/ui/Button.jsx";
 import { FaGithub } from "react-icons/fa";
 import { GiGoat } from "react-icons/gi";
+import SEO from "../components/ui/SEO.jsx";
 
 export default function Home() {
   return (
     <div>
+      <SEO
+        title="Home"
+        description="David Begley - UX Architect and Frontend Developer"
+        url="/"
+      />
       <Section>
         <Container>
           <h1 className="heading-hero">
@@ -16,23 +22,12 @@ export default function Home() {
             I'm a UX Designer and Frontend Developer passionate about creating
             beautiful, accessible, and user-friendly web experiences.
           </h2>
-          <div className="flex gap-4">
-            <Button variant="primary" rightIcon={<GiGoat />} size="lg">
-              Get in Touch
+          <div className="flex gap-4 mt-8 flex-wrap justify-center">
+            <Button as="a" href="/portfolio" variant="primary">
+              Check out my work
             </Button>
-            <Button variant="secondary" size="md">
-              View my Work
-            </Button>
-            <Button variant="link" size="lg">
-              Read my Blog
-            </Button>
-            <Button
-              as="a"
-              href="https://www.google.com"
-              variant="link"
-              size="md"
-            >
-              Visit Google
+            <Button as="a" href="/resume" variant="secondary">
+              View my resume
             </Button>
           </div>
         </Container>
