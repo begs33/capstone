@@ -31,7 +31,7 @@
   "prettier.singleQuote": false,
   "prettier.tabWidth": 2,
   "prettier.trailingComma": "es5",
-  "prettier.printWidth": 80,
+  "prettier.printWidth": 90,
   "prettier.bracketSpacing": true,
   "prettier.arrowParens": "always"
 }

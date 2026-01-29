@@ -1,5 +1,6 @@
 import Container from "../components/ui/Container.jsx";
 import Section from "../components/ui/Section.jsx";
+import TechStack from "../components/sections/TechStack.jsx";
 import Button from "../components/ui/Button.jsx";
 import { FaGithub } from "react-icons/fa";
 import { GiGoat } from "react-icons/gi";
@@ -19,8 +20,8 @@ export default function Home() {
             Hi, my name is David Begley, I create things for the web.
           </h1>
           <h2 className="mt-4 body-large">
-            I'm a UX Designer and Frontend Developer passionate about creating
-            beautiful, accessible, and user-friendly web experiences.
+            I'm a UX Designer and Frontend Developer passionate about creating beautiful,
+            accessible, and user-friendly web experiences.
           </h2>
           <div className="flex gap-4 mt-8 flex-wrap justify-center">
             <Button as="a" href="/portfolio" variant="primary">
@@ -32,6 +33,8 @@ export default function Home() {
           </div>
         </Container>
       </Section>
+
+      <TechStack />
     </div>
   );
 }
