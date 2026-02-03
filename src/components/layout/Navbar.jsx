@@ -40,6 +40,18 @@ export default function Navbar() {
             </li>
             <li>
               <NavLink
+                to="/portfolio"
+                className={({ isActive }) =>
+                  `text-sm front-medium transition hover:text-white ${
+                    isActive ? "text-white" : " text-white/70"
+                  }`
+                }
+              >
+                Portfolio
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to="/resume"
                 className={({ isActive }) =>
                   `text-sm front-medium transition hover:text-white ${
