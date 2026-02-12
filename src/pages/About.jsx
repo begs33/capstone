@@ -12,11 +12,7 @@ import { FaUserCircle } from "react-icons/fa";
 export default function About() {
   return (
     <>
-      <SEO
-        title="About"
-        description="Learn more about me, my background, values and experiences."
-        url="/about"
-      />
+      <SEO title="About" description="Here is my about me" url="/about" />
 
       {/* Hero/Intro Section */}
       <Section>

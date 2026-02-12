@@ -1,7 +1,8 @@
 export const aboutData = {
   // Bio section
   bio: {
-    intro: "This is where I would write a brief introduction about myself",
+    intro:
+      "I am an asiring Frontend Developer, who loves the 'visual' side of the web. I specialize in turning complex designs into pixel perfect reality using React and Tailwind. I'm obsessed with clean code architecture and creating seamless animations that improve user flow. Currently completing my Frontend Capstone and looking for my first professional challenge",
     background: "This is where I would describe my background",
     current: "This is where I would talk about current projects",
     personal: "This is where I would share about my personal ideas",
