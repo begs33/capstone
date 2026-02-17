@@ -29,8 +29,12 @@ export default function Navbar() {
         <Container className="flex h-16 items-center">
           {/* Left: brand (flex-1) */}
           <div className="flex-1 flex justify-start">
-            <a href="/" aria-label="Home — Joe Anonymous" className="flex items-center gap-2">
-              <span className="text-white font-semibold">Joe Anonymous</span>
+            <a
+              href="/"
+              aria-label="Home — David Begley"
+              className="flex items-center gap-2"
+            >
+              <span className="text-white font-semibold">David Begley</span>
             </a>
           </div>
 
@@ -41,7 +45,9 @@ export default function Navbar() {
                 <li key={link.to}>
                   <NavLink
                     to={link.to}
-                    className={({ isActive }) => `transition hover:text-white ${isActive ? "text-white" : ""}`}
+                    className={({ isActive }) =>
+                      `transition hover:text-white ${isActive ? "text-white" : ""}`
+                    }
                   >
                     {link.label}
                   </NavLink>
@@ -53,7 +59,13 @@ export default function Navbar() {
           {/* Right: CTA / mobile button (flex-1) */}
           <div className="flex-1 flex justify-end">
             {/* Desktop CTA */}
-            <Button as="a" href="/contact" variant="primary" size="sm" className="hidden md:inline-flex">
+            <Button
+              as="a"
+              href="/contact"
+              variant="primary"
+              size="sm"
+              className="hidden md:inline-flex"
+            >
               Contact Me
             </Button>
 
