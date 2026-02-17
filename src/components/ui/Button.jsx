@@ -20,9 +20,9 @@ const Button = forwardRef(
       "inline-flex items-center justify-center font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-lg disabled:cursor-not-allowed disabled:opacity-50 min-h-[44px]";
 
     const variants = {
-      primary: "bg-white text-black hover:opacity-90 active:opacity-80",
-      secondary:
-        "ring-1 ring-white/30 text-white hover:bg-white/10 active:bg-white/20",
+      primary:
+        "bg-[var(--color-background-action-primary)] text-black hover:opacity-90 active:opacity-80",
+      secondary: "ring-1 ring-white/30 text-white hover:bg-white/10 active:bg-white/20",
       link: "text-white underline underline-offset-4 hover:opacity-80 active:opacity-60",
     };
 
@@ -69,12 +69,7 @@ const Button = forwardRef(
       .filter(Boolean)
       .join(" ");
     return (
-      <Component
-        ref={ref}
-        className={buttonClasses}
-        disabled={disabled}
-        {...props}
-      >
+      <Component ref={ref} className={buttonClasses} disabled={disabled} {...props}>
         {leftIcon && renderIcon(leftIcon)}
         {!iconOnly && children}
         {rightIcon && renderIcon(rightIcon)}

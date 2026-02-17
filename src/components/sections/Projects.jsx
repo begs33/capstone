@@ -44,7 +44,7 @@ export default function Projects({
         </ul>
         {/* Bottom CTA - only show if there are more projects and showViewMore is true */}
         {showViewMore && limit && projects.length > limit && (
-          <div className="nt-10 flex justify-center">
+          <div className="mt-10 flex justify-center">
             <Button as="a" href="/portfolio" variant="secondary">
               View More of My Work
             </Button>
