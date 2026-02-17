@@ -206,7 +206,7 @@
 :root {
   color-scheme: dark;
   --color-background-primary: #1a1410;
-  --color-background-action-primary: #a855f7;
+  --color-background-action-primary: #38462c60;
   --color-text-primary: #faf5ff;
   --color-card-primary: #27272a;
 }
